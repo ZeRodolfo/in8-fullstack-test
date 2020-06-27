@@ -12,6 +12,27 @@ class ApiController extends Controller
     {
         // logic to get all contacts goes here
         $contacts = Contact::get()->toJson(JSON_PRETTY_PRINT);
-        return Response($contacts, 200);
+        return response($contacts, 200);
+    }
+
+    public function createContact(Request $request)
+    {
+        $existsContact = Contact::where('email', $request->email)->exists();
+        if ($existsContact) {
+            return response()->json([
+                'message' => 'Este e-mail já se encontra cadastrado.'
+            ], 400);
+        }
+
+        $contact = new Contact;
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->birthdate = $request->birthdate;
+        $contact->phone = $request->phone;
+        $contact->save();
+
+        return response()->json([
+            $contact
+        ], 201);
     }
 }

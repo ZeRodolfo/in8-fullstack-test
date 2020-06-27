@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('contacts', 'ApiController@getAllContacts');
+Route::get("contacts", "ApiController@getAllContacts");
+Route::post("contacts", "ApiController@createContact");
