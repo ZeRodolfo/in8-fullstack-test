@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 class ApiController extends Controller
 {
