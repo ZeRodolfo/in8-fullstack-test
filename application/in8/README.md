@@ -1,4 +1,4 @@
-# Twitter React
+# IN8 React
 
 Este projeto foi inspirado no Test da IN8.
 

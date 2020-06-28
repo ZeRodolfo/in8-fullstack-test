@@ -18,7 +18,14 @@ function Routes({ history }) {
                 exact
                 path="/"
                 history={history}
-                component={() => <>Hello World!!</>}
+                component={() => (
+                  <>
+                    <h1>Hello World!!</h1>
+                    <h2>Teste</h2>
+                    <h3>Teste</h3>
+                    <h4>Teste</h4>
+                  </>
+                )}
               />
             </Switch>
           </ConnectedRouter>
@@ -28,6 +35,6 @@ function Routes({ history }) {
   );
 }
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = state => ({});
 
 export default connect(mapStateToProps)(Routes);
