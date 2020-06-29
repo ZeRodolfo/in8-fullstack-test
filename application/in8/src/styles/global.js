@@ -2,17 +2,17 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   @font-face {
-    font-family: "Helvetica UltraLight";
-    src: url("/fonts/HelveticaUltraLt_0.ttf") format("truetype");
+    font-family: "Helvetica";
+    src: url("/fonts/helvetica-neue-ultralight.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: "Roboto Regular";
+    font-family: "Roboto-Regular";
     src: url("/fonts/Roboto-Regular_0.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: "Roboto Light";
+    font-family: "Roboto-Light";
     src: url("/fonts/Roboto-Light_0.ttf") format("truetype");
   }
 
@@ -26,6 +26,7 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   /**

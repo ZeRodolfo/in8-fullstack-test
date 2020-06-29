@@ -7,6 +7,8 @@ import { LastLocationProvider } from "react-router-last-location";
 
 import Frame from "./frame";
 
+import Contact from "../pages/contact";
+
 function Routes({ history }) {
   return (
     <BrowserRouter>
@@ -18,14 +20,15 @@ function Routes({ history }) {
                 exact
                 path="/"
                 history={history}
-                component={() => (
-                  <>
-                    <h1>Hello World!!</h1>
-                    <h2>Teste</h2>
-                    <h3>Teste</h3>
-                    <h4>Teste</h4>
-                  </>
-                )}
+                // component={() => (
+                //   <>
+                //     <h1>Hello World!!</h1>
+                //     <h2>Teste</h2>
+                //     <h3>Teste</h3>
+                //     <h4>Teste</h4>
+                //   </>
+                // )}
+                component={Contact}
               />
             </Switch>
           </ConnectedRouter>
