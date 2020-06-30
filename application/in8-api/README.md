@@ -1,19 +1,35 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Banco de Dados MySql
 
 
-## Database
-
-$ mysql -uroot -p
+```
+$ mysql -u root -p
 
 CREATE DATABASE `in8`;
+```
+
+# Adicionar Usuário e Senha do banco de dados
+
+```
+// Raiz do projeto
+// .env
+
+DB_USERNAME=jrodolfo
+DB_PASSWORD=ZeRodolfo55
+```
+
+# Executar as migrações
+
+```
+php artisan migrate
+```
+
+# Executar API
+```
+php artisan serve
+```
+
+# Porta da API
+
+```
+8080
+```
