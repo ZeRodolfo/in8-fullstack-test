@@ -7,7 +7,7 @@ import { LastLocationProvider } from "react-router-last-location";
 
 import Frame from "./frame";
 
-import Contact from "../pages/contact";
+import Home from "../pages/home";
 
 function Routes({ history }) {
   return (
@@ -20,15 +20,7 @@ function Routes({ history }) {
                 exact
                 path="/"
                 history={history}
-                // component={() => (
-                //   <>
-                //     <h1>Hello World!!</h1>
-                //     <h2>Teste</h2>
-                //     <h3>Teste</h3>
-                //     <h4>Teste</h4>
-                //   </>
-                // )}
-                component={Contact}
+                component={Home}
               />
             </Switch>
           </ConnectedRouter>

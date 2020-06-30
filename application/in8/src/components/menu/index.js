@@ -12,8 +12,8 @@ const Menu = ({ logo = "", links = [] }) => {
   const { height, width } = useWindowDimensions();
 
   useEffect(() => {
-    setIsCollapsed(width < 768);
-    if (isOpenMenu && width > 767) {
+    setIsCollapsed(width <= 768);
+    if (isOpenMenu && width > 768) {
       setIsOpenMenu(false);
     }
   }, [width, height, isOpenMenu]);

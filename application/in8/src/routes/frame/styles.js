@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Bg = styled.picture`
   max-width: 100%;
   width: 100%;
@@ -21,7 +20,7 @@ export const Header = styled.header`
   position: relative;
   display: flex;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 `;
 
 export const HeaderContainerText = styled.div`
@@ -72,6 +71,10 @@ export const ScrollingToTop = styled.div`
   width: 40px;
   height: 40px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    right: 30px;
+  }
 `;
 
 export const Footer = styled.footer`
